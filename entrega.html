@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="entrega.css">
+    <title>Entrega</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="/assets/imgs/Fast Bird Express Company.png" alt="">
+        </div>
+        <div class="form">
+            <form action="entrega.php" method="post">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Endereço</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="login.html">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">CEP</label>
+                        <input id="firstname" type="number" name="postal" placeholder="CEP" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Estado</label>
+                        <input id="lastname" type="text" name="estado" placeholder="Estado" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Cidade</label>
+                        <input id="email" type="text" name="cidade" placeholder="Cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Bairro</label>
+                        <input id="number" type="text" name="bairro" placeholder="Bairro" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Rua</label>
+                        <input id="password" type="text" name="rua" placeholder="Rua" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Número</label>
+                        <input id="confirmPassword" type="number" name="numero" placeholder="Número da Residencia" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Complemento</label>
+                        <input id="confirmPassword" type="text" name="complemento" placeholder="Complemento" required>
+                    </div>
+
+                </div>
+
+                
+
+                <div class="continue-button">
+                    <button type="submit" name="pagamento">Pagamento</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
