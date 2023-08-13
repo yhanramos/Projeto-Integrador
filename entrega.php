@@ -14,7 +14,7 @@ if(isset($_POST['pagamento'])){
 
     if(mysqli_query($conexao, $sql)){
         mysqli_close($conexao); // Fechar conexão
-        header("Location: retirada.html"); // Redirecionar para a página de login
+        header("Location: cartao.html"); // Redirecionar para a página de login
         exit();
     } else {
         echo "Erro ao cadastrar o endereço: " . mysqli_error($conexao);

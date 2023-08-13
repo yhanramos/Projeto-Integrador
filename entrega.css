@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1d1d1d;
+    background: #3a3833;
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/imgs/fundo\ da\ parada.png);
+    background-color: #161615;
     padding: 1rem;
 }
 
@@ -58,6 +58,7 @@ body {
 }
 
 .login-button button {
+    font-family: "Raleway", sans-serif;
     border: none;
     background-color: #fb774b;
     padding: 0.4rem 1rem;
@@ -113,11 +114,10 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
+    outline: 1px solid #fb774b;
 }
 
-.input-box label,
-.gender-title h6 {
+.input-box label {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -128,14 +128,16 @@ body {
 }
 
 
+
+
 .continue-button button {
     width: 100%;
-    margin-top: 1rem;
-    color: white;
-    font-family: 'Raleway', sans-serif;
+    margin-top: 2.5rem;
     border: none;
+    font-family: "Raleway", sans-serif;
     background-color: #fb774b;
     padding: 0.62rem;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -175,17 +177,5 @@ body {
         max-height: 10rem;
         overflow-y: scroll;
         flex-wrap: nowrap;
-    }
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column;
-    }
-    .gender-title h6 {
-        margin: 0;
-    }
-    .gender-input {
-        margin-top: 0.5rem;
     }
 }

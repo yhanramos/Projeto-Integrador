@@ -12,7 +12,7 @@ if(isset($_POST['finalizar'])){
 
     if(mysqli_query($conexao, $sql)){
         mysqli_close($conexao); // Fechar conexão
-        header("Location: entrega.html"); // Redirecionar para a página de login
+        header("Location: index.html"); // Redirecionar para a página de login
         exit();
     } else {
         echo "Erro ao cadastrar o cartão: " . mysqli_error($conexao);
