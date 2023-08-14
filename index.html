@@ -41,9 +41,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login/Cadastro</a>
                     </li>
-                   
+
                     <li class="nav-item">
-                       <a href="shop.html"><i class="fal fa-shopping-bag"></i></a> 
+                        <a href="shop.html"><i class="fal fa-shopping-bag"></i></a>
                     </li>
 
             </div>
@@ -55,8 +55,8 @@
         <div class="container">
             <h5>NOVAS CHEGADAS</h5>
             <h1><span>Melhor preço</span> Este Ano</h1>
-            <p>Y&N oferece seu tempo muito confortável<br>sobre caminhadas e exercícios</p>
-            <button>Compre agora</button>
+            <p>A ShopWave oferece seu tempo muito confortável<br>sobre caminhadas e exercícios</p>
+            <button class="comprarBtn">Compre agora</button>
         </div>
     </section>
 
@@ -76,21 +76,21 @@
                 <img class="img-fluid" src="img/new/1.jpg">
                 <div class="details">
                     <h2>Tênis extremamente raros</h2>
-                    <button class="text-uppercase" id="meuBotao">Compre Agora</button>
+                    <button class="text-uppercase comprarBtn" >Compre Agora</button>
                 </div>
             </div>
             <div class="one col-lg-4 col-md-12 col-12 p-0">
                 <img class="img-fluid" src="img/new/5.jpg">
                 <div class="details">
                     <h2>Roupa em branco incrível</h2>
-                    <button class="text-uppercase" id="meuBotao">Compre Agora</button>
+                    <button class="text-uppercase comprarBtn" >Compre Agora</button>
                 </div>
             </div>
             <div class="one col-lg-4 col-md-12 col-12 p-0">
                 <img class="img-fluid" src="img/new/3.jpg">
                 <div class="details">
                     <h2>Relógios com até 50% de desconto</h2>
-                    <button class="text-uppercase" id="meuBotao">Compre Agora</button>
+                    <button class="text-uppercase comprarBtn">Compre Agora</button>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
         <div class="container">
             <h4>PROMOÇÃO DE MEIO TEMPORADA</h4>
             <h1>Coleção de outono <br> ATÉ 20% DE DESCONTO</h1>
-            <button id="meuBotao" class="text-uppercase">Compre Agora</button>
+            <button id="meuBotao" class="text-uppercase comprarBtn">Compre Agora</button>
         </div>
     </section>
 
@@ -264,7 +264,7 @@
                 </div>
                 <h5 class="p-name">Relógio Masculino de Pulso</h5>
                 <h4 class="p-price">R$ 420.00</h4>
-                <button class="buy-btn">Buy Now</button>
+                <button class="buy-btn">Compre Agora</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <a href="shop.html">
@@ -279,7 +279,7 @@
                 </div>
                 <h5 class="p-name">Relógio Masculino Diesel 10</h5>
                 <h4 class="p-price">R$ 325.99</h4>
-                <button class="buy-btn">Buy Now</button>
+                <button class="buy-btn">Compre Agora</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <a href="shop.html">
@@ -294,7 +294,7 @@
                 </div>
                 <h5 class="p-name">Relógio Mondaine Feminino</h5>
                 <h4 class="p-price">R$ 345.00</h4>
-                <button class="buy-btn">Buy Now</button>
+                <button class="buy-btn">Compre Agora</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <a href="shop.html"><img class="img-fluid mb-3" src="img/watches/4.jpg" alt=""></a>
@@ -307,7 +307,7 @@
                 </div>
                 <h5 class="p-name">Relógio Mondaime Masculino</h5>
                 <h4 class="p-price">R$ 230.00</h4>
-                <button class="buy-btn">Buy Now</button>
+                <button class="buy-btn">Comprea Agora</button>
             </div>
         </div>
     </section>
@@ -387,8 +387,7 @@
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="img/logo qualidade.png" alt="">
-                <p class="pt-3">Fringilla urna porttitor rhoncus dolor puros magna fringila diam maecenas ultrice mi
-                    eget maurDisus.
+                <p class="pt-3">Bem-vindo à ShopWave, o seu destino definitivo para a moda contemporânea e elegante.
                 </p>
             </div>
             <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
@@ -458,13 +457,12 @@
         crossorigin="anonymous"></script>
 
     <script>
-        // Obtém a referência para o botão pelo seu ID
-        const meuBotao = document.getElementById("meuBotao");
+        const buttons = document.querySelectorAll(".comprarBtn");
 
-        // Adiciona um evento de clique ao botão
-        meuBotao.addEventListener("click", function () {
-            // Redireciona o usuário para o arquivo shop.html
-            window.location.href = "shop.html";
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                window.location.href = "shop.html";
+            });
         });
     </script>
 </body>
