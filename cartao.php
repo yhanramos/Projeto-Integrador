@@ -9,11 +9,11 @@ if(isset($_POST['finalizar'])){
     $cvv = $_POST['cvv']; 
 
     $sql = "INSERT INTO cartoes (numero, titular, mes, ano, cvv ) VALUES ('$numero', '$titular', '$mes','$ano', '$cvv')";
-
+    
     if(mysqli_query($conexao, $sql)){
-        mysqli_close($conexao); // Fechar conexão
+        
         header("Location: index.html"); // Redirecionar para a página de login
-        exit();
+       
     } else {
         echo "Erro ao cadastrar o cartão: " . mysqli_error($conexao);
     }

@@ -1,7 +1,9 @@
 /*
 See on github: https://github.com/muhammederdem/credit-card-form
 */
-
+function comprar(){
+  alert('Compra realizada com sucesso')
+}
 new Vue({
   el: "#app",
   data() {
@@ -86,6 +88,27 @@ new Vue({
   }
 });
 
-function retirada(){
-  window.location = "./retirada.html"
+
+
+
+
+
+
+function validaForm() {
+  var number = document.getElementById("cardNumber").value;
+  var cardName = document.getElementById("cardName").value;
+  var cardMonth = document.getElementById("cardMonth").value;
+  var cardYear = document.getElementById("cardYear").value;
+  var cardCvv = document.getElementById("cardCvv").value;
+
+  if (number == "" || cardName == "" || cardMonth == "" || cardYear == "" || cardCvv == "") {
+    alert("Por favor, preencha todos os campos.");
+    return false;
+  } else {
+    alert("Compra realizada com sucesso!");
+    window.location.href = "index.html";
+    return true;
+  }
 }
+
+
